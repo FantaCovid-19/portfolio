@@ -64,6 +64,7 @@ import Hero from './components/Sections/Hero.vue'
 
   /* Typography — Responsive (clamp) */
   --hero-title: clamp(2rem, 5vw, 3.5rem); /* Responsive font size for hero titles */
+  --hero-subtitle: clamp(1.25rem, 3vw, 1.75rem); /* Responsive font size for hero subtitles */
   --section-title: clamp(1.5rem, 3vw, 2.25rem); /* Responsive font size for section titles */
   --card-title: clamp(0.875rem, 1.5vw, 1.125rem); /* Responsive font size for card titles */
   --body-fluid: clamp(0.875rem, 1.2vw, 1rem); /* Responsive font size for body text */
