@@ -2,12 +2,14 @@
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 import Hero from './components/Sections/Hero.vue'
+import About from './components/Sections/About.vue'
 </script>
 
 <template>
   <Navbar />
   <main>
     <Hero />
+    <About />
   </main>
   <Footer />
 </template>
@@ -347,5 +349,73 @@ section {
   font-size: var(--text-xl);
   padding: var(--space-3) var(--space-6);
   border-radius: var(--radius-xl);
+}
+
+.badge {
+  font-family: var(--font-monospace);
+  font-size: var(--text-xs);
+  font-weight: var(--fw-medium);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.b-blue {
+  background: rgba(59, 130, 246, 0.15);
+  color: #93c5fd;
+  border: var(--border-thin) solid rgba(59, 130, 246, 0.3);
+}
+
+.b-green {
+  background: rgba(34, 197, 94, 0.12);
+  color: #86efac;
+  border: var(--border-thin) solid rgba(34, 197, 94, 0.25);
+}
+
+.b-amber {
+  background: rgba(245, 158, 11, 0.12);
+  color: #fcd34d;
+  border: var(--border-thin) solid rgba(245, 158, 11, 0.25);
+}
+
+.b-red {
+  background: rgba(239, 68, 68, 0.12);
+  color: #fca5a5;
+  border: var(--border-thin) solid rgba(239, 68, 68, 0.25);
+}
+
+.b-purple {
+  background: rgba(139, 92, 246, 0.12);
+  color: #c4b5fd;
+  border: var(--border-thin) solid rgba(139, 92, 246, 0.25);
+}
+
+.b-gray {
+  background: var(--muted);
+  color: var(--t5);
+  border: var(--border-thin) solid var(--border);
+}
+
+.b-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.stag {
+  font-family: var(--font-monospace);
+  font-size: var(--text-xs);
+  font-weight: var(--fw-medium);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-md);
+  background: var(--card);
+  border: var(--border-thin) solid var(--muted);
+  color: var(--t4);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
 }
 </style>
