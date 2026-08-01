@@ -15,6 +15,7 @@
     "format": "prettier --write --experimental-cli src/"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "lucide-vue-next": "^1.0.0",
     "vue": "^3.5.31",
     "vue-i18n": "^11.3.0",
