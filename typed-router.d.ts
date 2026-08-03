@@ -34,11 +34,11 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '/[...all]': RouteRecordInfo<
-      '/[...all]',
-      '/:all(.*)',
-      { all: ParamValue<true> },
-      { all: ParamValue<false> },
+    '/[...path]': RouteRecordInfo<
+      '/[...path]',
+      '/:path(.*)',
+      { path: ParamValue<true> },
+      { path: ParamValue<false> },
       | never
     >,
   }
@@ -54,15 +54,15 @@ declare module 'vue-router/auto-routes' {
    * @internal
    */
   export interface _RouteFileInfoMap {
-    'src/router/routes/index.vue': {
+    'src/pages/index.vue': {
       routes:
         | '/'
       views:
         | never
     }
-    'src/router/routes/[...all].vue': {
+    'src/pages/[...path].vue': {
       routes:
-        | '/[...all]'
+        | '/[...path]'
       views:
         | never
     }
