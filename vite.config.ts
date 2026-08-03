@@ -9,17 +9,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 export default defineConfig({
   plugins: [
     VueRouter({
-      routesFolder: {
-        src: 'src/router/routes',
-        path: '',
-        exclude: (excluded) => excluded,
-        filePatterns: (filePatterns) => filePatterns,
-        extensions: (extensions) => extensions,
-      },
-
-      extensions: ['.vue'],
-      filePatterns: ['**/*'],
-      exclude: [],
+      routesFolder: 'src/pages',
     }),
     vue(),
     vueDevTools(),
